@@ -1,0 +1,1330 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>网红黑料在线免费 - 官方视频门户 | 真人解读与理性吃瓜社区</title>
+<meta name="description" content="网红黑料在线免费官方网站，专注潮流八卦视频内容的品牌平台，提供高清正版原创解读视频、创作者社区与理性吃瓜指南，品质口碑值得信赖。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141414'/%3E%3Ccircle cx='26' cy='28' r='9' fill='%23FF3B3B'/%3E%3Crect x='16' y='42' width='32' height='5' rx='2.5' fill='%23FFD400'/%3E%3Cpath d='M46 18l6 10h-12z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --nhk-ink:#141414;
+  --nhk-ink-soft:#2a2a2a;
+  --nhk-paper:#fdfdfb;
+  --nhk-red:#e8281e;
+  --nhk-yellow:#ffd400;
+  --nhk-line:#e3e1dc;
+  --nhk-gray:#6d6a64;
+  --nhk-tint:#f4f2ee;
+  --nhk-radius:10px;
+  --nhk-sticky:104px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:var(--nhk-sticky);}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  color:var(--nhk-ink);
+  background:var(--nhk-paper);
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:800;letter-spacing:.01em;}
+p{margin:0 0 14px;}
+.nhk-wrap{width:min(1180px,calc(100% - 40px));margin:0 auto;}
+.nhk-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+/* ---------- sticky announce + header ---------- */
+.nhk-sticky-shell{position:sticky;top:0;z-index:80;}
+.nhk-announce{
+  background:var(--nhk-ink);
+  color:#f5f3ee;
+  font-size:13px;
+  padding:8px 0;
+  border-bottom:1px solid #333;
+}
+.nhk-announce .nhk-wrap{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+.nhk-announce-tag{
+  background:var(--nhk-red);
+  color:#fff;
+  font-weight:700;
+  font-size:11px;
+  padding:2px 8px;
+  border-radius:3px;
+  letter-spacing:.08em;
+  flex:0 0 auto;
+}
+.nhk-announce-track{flex:1 1 260px;min-width:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:#d8d5cd;}
+.nhk-announce-track b{color:var(--nhk-yellow);font-weight:700;}
+.nhk-announce-more{font-size:12px;color:#f5f3ee;border-bottom:1px solid #777;flex:0 0 auto;}
+.nhk-header{
+  background:rgba(253,253,251,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--nhk-line);
+}
+.nhk-header .nhk-wrap{display:flex;align-items:center;gap:18px;min-height:64px;}
+.nhk-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.nhk-brand-mark{
+  width:38px;height:38px;border-radius:9px;background:var(--nhk-ink);
+  display:grid;place-items:center;color:var(--nhk-yellow);font-weight:900;font-size:17px;
+  position:relative;overflow:hidden;
+}
+.nhk-brand-mark::after{content:"";position:absolute;width:14px;height:14px;border-radius:50%;background:var(--nhk-red);right:-3px;bottom:-3px;}
+.nhk-brand-name{font-size:17px;font-weight:900;letter-spacing:.02em;line-height:1.2;}
+.nhk-brand-name small{display:block;font-size:10px;font-weight:600;color:var(--nhk-gray);letter-spacing:.18em;}
+.nhk-nav{display:flex;gap:2px;flex:1 1 auto;flex-wrap:wrap;}
+.nhk-nav a{
+  font-size:14px;font-weight:600;padding:8px 12px;border-radius:6px;color:var(--nhk-ink-soft);
+  transition:background .18s,color .18s;
+}
+.nhk-nav a:hover{background:var(--nhk-tint);color:var(--nhk-red);}
+.nhk-header-tools{display:flex;align-items:center;gap:8px;flex:0 0 auto;}
+.nhk-search{
+  display:flex;align-items:center;gap:6px;border:1px solid var(--nhk-line);
+  border-radius:8px;padding:5px 8px;background:#fff;
+}
+.nhk-search input{
+  border:0;outline:0;font-size:13px;width:150px;background:transparent;color:var(--nhk-ink);
+}
+.nhk-search button{
+  border:0;background:var(--nhk-ink);color:#fff;border-radius:5px;font-size:12px;padding:4px 10px;font-weight:700;
+}
+.nhk-search button:hover{background:var(--nhk-red);}
+.nhk-burger{
+  display:none;border:1px solid var(--nhk-line);background:#fff;border-radius:8px;
+  width:40px;height:38px;font-size:18px;line-height:1;color:var(--nhk-ink);
+}
+.nhk-search-feedback{
+  font-size:12px;color:var(--nhk-red);font-weight:600;padding:0 4px 6px;
+  min-height:0;
+}
+.nhk-search-feedback:empty{display:none;}
+
+/* ---------- hero ---------- */
+.nhk-hero{padding:44px 0 34px;border-bottom:1px solid var(--nhk-line);}
+.nhk-hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center;}
+.nhk-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;
+  letter-spacing:.14em;color:var(--nhk-red);border:1px solid var(--nhk-red);
+  padding:4px 10px;border-radius:999px;margin-bottom:18px;
+}
+.nhk-hero h1{
+  font-size:clamp(34px,5vw,58px);
+  line-height:1.08;
+  letter-spacing:-.01em;
+  margin-bottom:18px;
+}
+.nhk-hero h1 em{
+  font-style:normal;position:relative;color:var(--nhk-red);white-space:nowrap;
+}
+.nhk-hero h1 em::after{
+  content:"";position:absolute;left:0;right:0;bottom:2px;height:10px;
+  background:var(--nhk-yellow);z-index:-1;border-radius:2px;
+}
+.nhk-hero h1{position:relative;z-index:0;}
+.nhk-hero-lead{font-size:16.5px;color:var(--nhk-ink-soft);max-width:560px;margin-bottom:20px;}
+.nhk-hero-stats{display:flex;gap:28px;flex-wrap:wrap;margin:22px 0 26px;}
+.nhk-hero-stat b{display:block;font-size:26px;font-weight:900;color:var(--nhk-ink);line-height:1.2;}
+.nhk-hero-stat b span{color:var(--nhk-red);font-size:16px;}
+.nhk-hero-stat small{font-size:12px;color:var(--nhk-gray);letter-spacing:.06em;}
+.nhk-hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+.nhk-btn{
+  display:inline-flex;align-items:center;gap:8px;border-radius:8px;font-weight:700;font-size:14.5px;
+  padding:12px 22px;border:1.5px solid var(--nhk-ink);transition:transform .16s,background .16s,color .16s;
+}
+.nhk-btn:active{transform:translateY(1px);}
+.nhk-btn-solid{background:var(--nhk-ink);color:#fff;}
+.nhk-btn-solid:hover{background:var(--nhk-red);border-color:var(--nhk-red);}
+.nhk-btn-ghost{background:transparent;color:var(--nhk-ink);}
+.nhk-btn-ghost:hover{background:var(--nhk-yellow);border-color:var(--nhk-yellow);}
+.nhk-hero-art{
+  position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--nhk-line);
+  background:#111;box-shadow:0 24px 50px -28px rgba(0,0,0,.45);
+}
+.nhk-hero-art img{width:100%;aspect-ratio:16/12;object-fit:cover;}
+.nhk-hero-art-cap{
+  position:absolute;left:0;right:0;bottom:0;padding:44px 20px 16px;
+  background:linear-gradient(to top,rgba(10,10,10,.92),rgba(10,10,10,0));
+  color:#fff;display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.nhk-hero-art-cap strong{font-size:14.5px;font-weight:700;}
+.nhk-hero-art-cap span{
+  font-size:11.5px;background:var(--nhk-red);border-radius:3px;padding:2px 8px;font-weight:700;letter-spacing:.06em;
+}
+.nhk-play-dot{
+  width:34px;height:34px;border-radius:50%;background:var(--nhk-yellow);color:#141414;
+  display:grid;place-items:center;font-size:13px;flex:0 0 auto;
+}
+
+/* ---------- section common ---------- */
+.nhk-section{padding:52px 0;border-bottom:1px solid var(--nhk-line);}
+.nhk-section-alt{background:var(--nhk-tint);}
+.nhk-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:26px;flex-wrap:wrap;}
+.nhk-sec-kicker{
+  font-size:12px;font-weight:800;letter-spacing:.2em;color:var(--nhk-red);
+  display:block;margin-bottom:8px;
+}
+.nhk-sec-head h2{font-size:clamp(23px,3.2vw,32px);}
+.nhk-sec-head p{margin:8px 0 0;color:var(--nhk-gray);font-size:14px;max-width:620px;}
+.nhk-sec-aside{font-size:13px;color:var(--nhk-gray);border-bottom:1px dashed var(--nhk-line);padding-bottom:3px;}
+
+/* ---------- focus + list (video 1大+文字列表) ---------- */
+.nhk-focus-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:30px;min-width:0;}
+.nhk-focus-main{
+  border:1px solid var(--nhk-line);border-radius:var(--nhk-radius);overflow:hidden;background:#fff;
+}
+.nhk-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.nhk-focus-body{padding:20px 22px 22px;}
+.nhk-tag-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px;}
+.nhk-tag{
+  font-size:11.5px;font-weight:700;border:1px solid var(--nhk-line);background:#fff;
+  color:var(--nhk-ink-soft);border-radius:999px;padding:2px 10px;
+}
+.nhk-tag-red{background:var(--nhk-red);border-color:var(--nhk-red);color:#fff;}
+.nhk-focus-body h3{font-size:22px;margin-bottom:10px;}
+.nhk-focus-body p{font-size:14.5px;color:var(--nhk-ink-soft);}
+.nhk-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--nhk-gray);margin-top:12px;}
+.nhk-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;}
+.nhk-chip{
+  font-size:12.5px;font-weight:600;border:1px solid var(--nhk-line);background:#fff;
+  border-radius:6px;padding:5px 11px;color:var(--nhk-ink-soft);display:inline-flex;align-items:center;gap:5px;
+  transition:background .15s,color .15s,border-color .15s;
+}
+.nhk-chip:hover{border-color:var(--nhk-ink);}
+.nhk-chip.is-liked{background:#ffe9e7;border-color:var(--nhk-red);color:var(--nhk-red);}
+.nhk-chip.is-saved{background:#fff6d6;border-color:#e0bb00;color:#7a6400;}
+
+.nhk-list{border-top:2px solid var(--nhk-ink);}
+.nhk-list-item{
+  padding:16px 0;border-bottom:1px solid var(--nhk-line);display:flex;gap:14px;min-width:0;
+}
+.nhk-list-num{
+  font-size:20px;font-weight:900;color:var(--nhk-line);line-height:1.2;flex:0 0 34px;
+  transition:color .18s;
+}
+.nhk-list-item:hover .nhk-list-num{color:var(--nhk-red);}
+.nhk-list-cnt{min-width:0;flex:1 1 auto;}
+.nhk-list-cnt h3{font-size:16px;margin-bottom:5px;}
+.nhk-list-cnt p{
+  font-size:13px;color:var(--nhk-gray);margin:0 0 7px;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+}
+.nhk-list-cnt .nhk-meta{margin-top:6px;font-size:12px;gap:10px;}
+.nhk-list-cnt .nhk-actions{margin-top:9px;}
+
+/* ---------- keyword analysis ---------- */
+.nhk-analysis{padding:52px 0;border-bottom:1px solid var(--nhk-line);background:#fff;}
+.nhk-analysis-inner{
+  display:grid;grid-template-columns:240px 1fr;gap:40px;align-items:start;
+}
+.nhk-analysis-side{position:sticky;top:calc(var(--nhk-sticky) + 20px);}
+.nhk-analysis-side h2{font-size:clamp(22px,2.8vw,28px);margin-bottom:10px;}
+.nhk-analysis-side p{font-size:13px;color:var(--nhk-gray);}
+.nhk-analysis-side .nhk-side-stamp{
+  margin-top:18px;border:1px solid var(--nhk-line);border-radius:8px;padding:14px;
+  font-size:12.5px;color:var(--nhk-ink-soft);background:var(--nhk-tint);
+}
+.nhk-analysis-side .nhk-side-stamp b{display:block;color:var(--nhk-red);font-size:13px;margin-bottom:4px;}
+.nhk-analysis-body h3{
+  font-size:18px;margin:26px 0 10px;padding-left:12px;border-left:4px solid var(--nhk-red);
+}
+.nhk-analysis-body h3:first-child{margin-top:0;}
+.nhk-analysis-body p{font-size:15px;color:#2e2c28;text-align:justify;}
+.nhk-analysis-body p strong{color:var(--nhk-ink);}
+
+/* ---------- specials / topics ---------- */
+.nhk-special-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.nhk-special{
+  border:1px solid var(--nhk-line);border-radius:var(--nhk-radius);overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;
+}
+.nhk-special img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.nhk-special-body{padding:16px 18px 18px;flex:1 1 auto;display:flex;flex-direction:column;}
+.nhk-special-body h3{font-size:16.5px;margin-bottom:7px;}
+.nhk-special-body p{font-size:13.5px;color:var(--nhk-gray);margin-bottom:10px;}
+.nhk-special-items{list-style:none;margin:0 0 12px;padding:0;font-size:13px;}
+.nhk-special-items li{padding:5px 0 5px 14px;position:relative;color:var(--nhk-ink-soft);border-bottom:1px dashed #eee;}
+.nhk-special-items li:last-child{border-bottom:0;}
+.nhk-special-items li::before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;background:var(--nhk-yellow);border-radius:1px;}
+.nhk-status{
+  display:inline-block;font-size:11px;font-weight:800;letter-spacing:.06em;
+  padding:2px 8px;border-radius:3px;background:#ffe9e7;color:var(--nhk-red);margin-top:auto;align-self:flex-start;
+}
+.nhk-status-done{background:#e9f5e9;color:#217a35;}
+
+/* ---------- creators ---------- */
+.nhk-creators{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}
+.nhk-creator{
+  display:flex;gap:16px;border:1px solid var(--nhk-line);border-radius:var(--nhk-radius);
+  padding:18px;background:#fff;min-width:0;
+}
+.nhk-avatar{
+  width:60px;height:60px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+  font-size:22px;font-weight:900;color:#fff;position:relative;
+}
+.nhk-avatar::after{
+  content:"";position:absolute;inset:-3px;border-radius:50%;border:2px dashed var(--nhk-line);
+}
+.nhk-avatar.av1{background:linear-gradient(135deg,#e8281e,#ff8a5c);}
+.nhk-avatar.av2{background:linear-gradient(135deg,#1b1b1b,#5a5a5a);}
+.nhk-avatar.av3{background:linear-gradient(135deg,#00707a,#39c7bd);}
+.nhk-avatar.av4{background:linear-gradient(135deg,#7a4bd6,#d76bd0);}
+.nhk-avatar.av5{background:linear-gradient(135deg,#b07b00,#ffb020);}
+.nhk-creator-cnt{min-width:0;flex:1 1 auto;}
+.nhk-creator-cnt h3{font-size:16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.nhk-creator-cnt h3 button{
+  border:0;background:transparent;color:var(--nhk-red);font-size:12px;font-weight:700;padding:0;
+  border-bottom:1px solid var(--nhk-red);line-height:1.2;
+}
+.nhk-creator-fields{font-size:12.5px;color:var(--nhk-ink-soft);font-weight:600;margin:5px 0 6px;}
+.nhk-creator-cnt p{font-size:13px;color:var(--nhk-gray);margin:0 0 8px;}
+.nhk-creator-nums{display:flex;gap:16px;font-size:12px;color:var(--nhk-ink-soft);}
+.nhk-creator-nums b{color:var(--nhk-ink);font-weight:800;}
+
+/* ---------- rankings / reviews ---------- */
+.nhk-rank-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:34px;min-width:0;}
+.nhk-rank-block h3{font-size:16px;margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+.nhk-rank-block h3::before{content:"";width:5px;height:16px;background:var(--nhk-red);border-radius:1px;}
+.nhk-rank-list{list-style:none;margin:0;padding:0;}
+.nhk-rank-list li{
+  display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--nhk-line);
+  font-size:13.5px;min-width:0;
+}
+.nhk-rank-list li .rk{
+  width:22px;height:22px;border-radius:4px;background:var(--nhk-tint);color:var(--nhk-gray);
+  font-size:12px;font-weight:900;display:grid;place-items:center;flex:0 0 auto;
+}
+.nhk-rank-list li:nth-child(1) .rk{background:var(--nhk-red);color:#fff;}
+.nhk-rank-list li:nth-child(2) .rk{background:var(--nhk-yellow);color:#141414;}
+.nhk-rank-list li:nth-child(3) .rk{background:#2a2a2a;color:#fff;}
+.nhk-rank-list li .rk-title{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:600;}
+.nhk-rank-list li .rk-val{font-size:12px;color:var(--nhk-gray);flex:0 0 auto;}
+.nhk-review-cols{columns:2;column-gap:22px;}
+.nhk-review{
+  break-inside:avoid;border:1px solid var(--nhk-line);border-radius:8px;padding:14px 16px;
+  margin:0 0 16px;background:#fff;font-size:13.5px;
+}
+.nhk-review p{margin:0 0 8px;color:var(--nhk-ink-soft);}
+.nhk-review footer{font-size:12px;color:var(--nhk-gray);display:flex;align-items:center;gap:8px;}
+.nhk-review footer b{color:var(--nhk-ink);font-weight:700;}
+.nhk-stars{color:#ffb020;letter-spacing:1px;font-size:12px;}
+.nhk-score-summary{
+  border:1px solid var(--nhk-ink);border-radius:8px;padding:16px;margin-bottom:18px;
+  display:flex;gap:18px;align-items:center;flex-wrap:wrap;
+}
+.nhk-score-summary .big{font-size:38px;font-weight:900;line-height:1;color:var(--nhk-red);}
+.nhk-score-summary small{display:block;font-size:12px;color:var(--nhk-gray);}
+
+/* ---------- stories ---------- */
+.nhk-stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;}
+.nhk-story{
+  background:#fff;border:1px solid var(--nhk-line);border-radius:var(--nhk-radius);
+  padding:20px;border-top:4px solid var(--nhk-yellow);
+}
+.nhk-story h3{font-size:16px;margin-bottom:8px;}
+.nhk-story p{font-size:13.5px;color:var(--nhk-gray);margin:0;}
+.nhk-story .nhk-foot{font-size:12px;color:var(--nhk-ink-soft);margin-top:12px;font-weight:600;}
+
+/* ---------- faq + news + partners ---------- */
+.nhk-aux-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:36px;min-width:0;}
+.nhk-faq details{
+  border:1px solid var(--nhk-line);border-radius:8px;margin-bottom:10px;background:#fff;overflow:hidden;
+}
+.nhk-faq summary{
+  cursor:pointer;padding:13px 16px;font-weight:700;font-size:14px;list-style:none;
+  display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--nhk-ink);
+}
+.nhk-faq summary::-webkit-details-marker{display:none;}
+.nhk-faq summary::after{content:"＋";font-weight:900;color:var(--nhk-red);font-size:15px;}
+.nhk-faq details[open] summary{background:var(--nhk-tint);}
+.nhk-faq details[open] summary::after{content:"－";}
+.nhk-faq .nhk-faq-body{padding:4px 16px 14px;font-size:13.5px;color:var(--nhk-ink-soft);}
+.nhk-news{list-style:none;margin:0 0 24px;padding:0;}
+.nhk-news li{
+  padding:12px 0;border-bottom:1px solid var(--nhk-line);font-size:13.5px;display:flex;gap:12px;align-items:flex-start;
+}
+.nhk-news time{font-size:12px;color:var(--nhk-gray);flex:0 0 62px;font-weight:700;}
+.nhk-news span{font-weight:600;}
+.nhk-partners{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+.nhk-partner{
+  border:1px solid var(--nhk-line);border-radius:7px;padding:11px 12px;font-size:13px;font-weight:700;
+  display:flex;align-items:center;gap:9px;background:#fff;
+}
+.nhk-partner i{
+  width:22px;height:22px;border-radius:5px;background:var(--nhk-ink);color:var(--nhk-yellow);
+  font-style:normal;font-size:11px;font-weight:900;display:grid;place-items:center;flex:0 0 auto;
+}
+
+/* ---------- cta / submit ---------- */
+.nhk-cta{
+  background:var(--nhk-ink);color:#fff;border-radius:14px;padding:34px;
+  display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+}
+.nhk-cta h2{font-size:clamp(21px,2.8vw,28px);color:#fff;margin-bottom:8px;}
+.nhk-cta p{color:#c9c5bc;font-size:14px;margin:0;max-width:520px;}
+.nhk-cta .nhk-btn-ghost{color:#fff;border-color:#fff;}
+.nhk-cta .nhk-btn-ghost:hover{background:var(--nhk-yellow);color:#141414;border-color:var(--nhk-yellow);}
+.nhk-cta .nhk-btn-solid{background:var(--nhk-red);border-color:var(--nhk-red);}
+.nhk-cta .nhk-btn-solid:hover{background:var(--nhk-yellow);color:#141414;border-color:var(--nhk-yellow);}
+
+/* ---------- footer ---------- */
+.nhk-footer{background:#0f0f0f;color:#aaa59b;padding:46px 0 28px;font-size:13px;}
+.nhk-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;min-width:0;}
+.nhk-footer h4{color:#fff;font-size:14px;margin-bottom:12px;letter-spacing:.05em;}
+.nhk-footer-brand .nhk-brand-name{color:#fff;}
+.nhk-footer-brand .nhk-brand-name small{color:#7d786f;}
+.nhk-footer p{color:#8e8a81;font-size:12.5px;line-height:1.7;}
+.nhk-footer ul{list-style:none;margin:0;padding:0;}
+.nhk-footer li{margin-bottom:8px;}
+.nhk-footer a:hover{color:var(--nhk-yellow);}
+.nhk-footer-bottom{
+  margin-top:34px;padding-top:20px;border-top:1px solid #2a2a2a;display:flex;
+  justify-content:space-between;gap:14px;flex-wrap:wrap;color:#77736b;font-size:12px;
+}
+
+/* ---------- toast ---------- */
+.nhk-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:#141414;color:#fff;font-size:13.5px;font-weight:600;padding:11px 20px;
+  border-radius:8px;box-shadow:0 12px 28px -10px rgba(0,0,0,.5);
+  opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;z-index:200;
+  max-width:calc(100% - 32px);text-align:center;
+}
+.nhk-toast.is-on{opacity:1;transform:translate(-50%,0);}
+
+/* ---------- back to top ---------- */
+.nhk-top{
+  position:fixed;right:22px;bottom:24px;width:44px;height:44px;border-radius:50%;
+  border:0;background:var(--nhk-red);color:#fff;font-size:17px;font-weight:900;
+  box-shadow:0 10px 22px -8px rgba(232,40,30,.7);opacity:0;pointer-events:none;
+  transition:opacity .2s,transform .2s;z-index:150;
+}
+.nhk-top.is-on{opacity:1;pointer-events:auto;}
+.nhk-top:hover{transform:translateY(-3px);}
+
+/* ---------- modal ---------- */
+.nhk-modal{
+  position:fixed;inset:0;background:rgba(10,10,10,.62);z-index:300;
+  display:none;align-items:center;justify-content:center;padding:20px;
+}
+.nhk-modal.is-on{display:flex;}
+.nhk-modal-box{
+  background:#fff;border-radius:12px;max-width:460px;width:100%;padding:26px;
+  max-height:82vh;overflow:auto;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);
+}
+.nhk-modal-box h3{font-size:19px;margin-bottom:10px;}
+.nhk-modal-box p{font-size:13.5px;color:var(--nhk-ink-soft);}
+.nhk-modal-close{
+  float:right;border:0;background:var(--nhk-tint);border-radius:6px;width:30px;height:30px;
+  font-size:15px;color:var(--nhk-ink);line-height:1;
+}
+.nhk-modal-fields{font-size:13px;color:var(--nhk-gray);margin:12px 0;}
+.nhk-modal-fields b{color:var(--nhk-ink);}
+.nhk-share-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .nhk-hero-grid{grid-template-columns:1fr;gap:28px;}
+  .nhk-focus-grid{grid-template-columns:1fr;}
+  .nhk-analysis-inner{grid-template-columns:1fr;gap:22px;}
+  .nhk-analysis-side{position:static;}
+  .nhk-rank-grid{grid-template-columns:1fr;gap:26px;}
+  .nhk-aux-grid{grid-template-columns:1fr;gap:26px;}
+  .nhk-special-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .nhk-footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media (max-width:760px){
+  :root{--nhk-sticky:96px;}
+  .nhk-wrap{width:calc(100% - 28px);}
+  .nhk-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:#fff;
+    border-bottom:1px solid var(--nhk-line);padding:10px 14px 14px;flex-direction:column;gap:2px;
+    box-shadow:0 16px 26px -18px rgba(0,0,0,.35);
+  }
+  .nhk-nav.is-open{display:flex;}
+  .nhk-header .nhk-wrap{position:relative;flex-wrap:wrap;gap:10px;padding:10px 0;}
+  .nhk-nav a{padding:10px 8px;border-radius:6px;}
+  .nhk-burger{display:block;}
+  .nhk-search input{width:110px;}
+  .nhk-creators{grid-template-columns:1fr;}
+  .nhk-special-grid{grid-template-columns:1fr;}
+  .nhk-stories{grid-template-columns:1fr;}
+  .nhk-review-cols{columns:1;}
+  .nhk-section{padding:38px 0;}
+  .nhk-hero{padding:30px 0 26px;}
+  .nhk-cta{padding:24px;}
+  .nhk-partners{grid-template-columns:1fr;}
+  .nhk-score-summary{gap:12px;}
+  .nhk-score-summary .big{font-size:30px;}
+}
+@media (max-width:480px){
+  .nhk-footer-grid{grid-template-columns:1fr;}
+  .nhk-hero-stats{gap:20px;}
+  .nhk-brand-name{font-size:15px;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== sticky announce + header ===== -->
+<div class="nhk-sticky-shell">
+  <div class="nhk-announce">
+    <div class="nhk-wrap">
+      <span class="nhk-announce-tag">官方发布</span>
+      <span class="nhk-announce-track">新增 <b>《吃瓜不踩坑》第 12 期</b> 已上线 · 创作者招募通道开启，本周新增 <b>37</b> 位认证作者 · 专题企划「谁在放大传闻」开放报名中</span>
+      <a class="nhk-announce-more" href="#nhk-news">查看全部 →</a>
+    </div>
+  </div>
+  <header class="nhk-header">
+    <div class="nhk-wrap">
+      <a class="nhk-brand" href="#nhk-top" aria-label="返回首页">
+        <span class="nhk-brand-mark">黑</span>
+        <span class="nhk-brand-name">网红黑料在线免费<small>CHIGUA VIDEO</small></span>
+      </a>
+      <nav class="nhk-nav" id="nhkNav" aria-label="主导航">
+        <a href="#nhk-focus">焦点内容</a>
+        <a href="#nhk-analysis">关键词解析</a>
+        <a href="#nhk-special">专题企划</a>
+        <a href="#nhk-creators">创作者</a>
+        <a href="#nhk-rank">口碑榜</a>
+        <a href="#nhk-news">企业动态</a>
+        <a href="#nhk-faq">常见问题</a>
+      </nav>
+      <div class="nhk-header-tools">
+        <div class="nhk-search">
+          <label class="nhk-sr" for="nhkSearchInput">搜索视频内容</label>
+          <input id="nhkSearchInput" type="search" placeholder="搜视频 / 作者 / 专题" autocomplete="off">
+          <button type="button" id="nhkSearchBtn">搜索</button>
+        </div>
+        <button class="nhk-burger" id="nhkBurger" type="button" aria-expanded="false" aria-controls="nhkNav" aria-label="展开导航">☰</button>
+      </div>
+    </div>
+    <div class="nhk-wrap"><div class="nhk-search-feedback" id="nhkSearchFeedback" role="status" aria-live="polite"></div></div>
+  </header>
+</div>
+
+<main id="nhk-top">
+
+  <!-- ===== S2 hero ===== -->
+  <section class="nhk-hero" aria-labelledby="nhkHeroTitle">
+    <div class="nhk-wrap nhk-hero-grid">
+      <div>
+        <span class="nhk-hero-badge">官网 · 原创视频社区</span>
+        <h1 id="nhkHeroTitle">网红黑料在线免费</h1>
+        <p class="nhk-hero-lead">
+          作为深耕潮流内容领域的视频品牌，我们把“网红黑料在线免费”做成一个理性、可核查、有分寸的内容生态：
+          官方发布高清原创解读视频，创作者提交素材线索，社区共同讨论。不编造、不网暴、不传播未经核实的指控，是我们持续运营的底线。
+        </p>
+        <p class="nhk-hero-lead" style="font-size:14.5px;color:var(--nhk-gray);margin-bottom:0;">
+          企业简介：网红黑料在线免费官方网站成立于内容行业快速迭代的年份，专注“传闻核查 + 舆论观察 + 创作者访谈”三类视频内容。
+          平台累计合作认证创作者超过 1,200 位，覆盖娱乐、直播、短视频、电商等多个垂直领域；
+          我们坚持原创采编、正版授权与高清呈现，为品牌方与用户搭建值得信赖的内容桥梁，用专业与匠心陪伴社区成长。
+        </p>
+        <div class="nhk-hero-stats">
+          <div class="nhk-hero-stat"><b>1,200<span>+</span></b><small>认证创作者</small></div>
+          <div class="nhk-hero-stat"><b>4,860<span>+</span></b><small>原创视频</small></div>
+          <div class="nhk-hero-stat"><b>98.2<span>%</span></b><small>核查通过率</small></div>
+        </div>
+        <div class="nhk-hero-actions">
+          <a class="nhk-btn nhk-btn-solid" href="#nhk-focus">进入焦点内容 →</a>
+          <a class="nhk-btn nhk-btn-ghost" href="#nhk-creators">认识创作者</a>
+          <a class="nhk-btn nhk-btn-ghost" href="#nhk-submit" id="nhkHeroSubmit">我要投稿</a>
+        </div>
+      </div>
+      <figure class="nhk-hero-art">
+        <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23151515'/%3E%3Cstop offset='1' stop-color='%233a1414'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23g1)'/%3E%3Ccircle cx='620' cy='120' r='150' fill='%23e8281e' opacity='.22'/%3E%3Ccircle cx='140' cy='470' r='120' fill='%23ffd400' opacity='.16'/%3E%3Crect x='110' y='150' width='330' height='230' rx='14' fill='%23222'/%3E%3Crect x='110' y='150' width='330' height='230' rx='14' fill='none' stroke='%23ffd400' stroke-width='3'/%3E%3Cpolygon points='250,215 250,315 335,265' fill='%23f5f3ee'/%3E%3Crect x='480' y='330' width='230' height='26' rx='6' fill='%23e8281e'/%3E%3Crect x='480' y='372' width='180' height='16' rx='4' fill='%23888'/%3E%3Crect x='480' y='400' width='210' height='16' rx='4' fill='%23666'/%3E%3Crect x='110' y='430' width='200' height='14' rx='4' fill='%23555'/%3E%3Ctext x='110' y='486' font-family='sans-serif' font-size='26' font-weight='bold' fill='%23ffd400'%3ECHIGUA%3C/text%3E%3Ctext x='110' y='516' font-family='sans-serif' font-size='16' fill='%23bbb'%3EORIGINAL%20VIDEO%20PORTAL%3C/text%3E%3C/svg%3E"
+             alt="网红黑料在线免费官网首屏主视觉，播放器界面与红色警示色块构成的内容门户画面" width="800" height="600">
+        <figcaption class="nhk-hero-art-cap">
+          <span class="nhk-play-dot">▶</span>
+          <strong>本周主推：传闻核查实录</strong>
+          <span>官方发布</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== S3 focus + video list ===== -->
+  <section class="nhk-section" id="nhk-focus" aria-labelledby="nhkFocusTitle">
+    <div class="nhk-wrap">
+      <div class="nhk-sec-head">
+        <div>
+          <span class="nhk-sec-kicker">FOCUS · 今日焦点</span>
+          <h2 id="nhkFocusTitle">焦点内容：三条线索，一次讲清</h2>
+          <p>网红黑料在线免费的编辑部每天挑选三个高关注度话题，用可追溯的素材与多方采访还原时间线，再交给社区一起判断。</p>
+        </div>
+        <a class="nhk-sec-aside" href="#nhk-special">查看专题企划 →</a>
+      </div>
+
+      <div class="nhk-focus-grid">
+        <article class="nhk-focus-main">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23fff2cf'/%3E%3Cstop offset='1' stop-color='%23ffe0e0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23g2)'/%3E%3Crect x='60' y='60' width='300' height='330' rx='10' fill='%23fff' stroke='%23141414' stroke-width='4'/%3E%3Ccircle cx='120' cy='120' r='24' fill='%23e8281e'/%3E%3Crect x='160' y='108' width='160' height='12' rx='5' fill='%23cfcac1'/%3E%3Crect x='160' y='130' width='110' height='12' rx='5' fill='%23e0dcd4'/%3E%3Crect x='88' y='180' width='244' height='10' rx='4' fill='%23ddd8cf'/%3E%3Crect x='88' y='204' width='210' height='10' rx='4' fill='%23ddd8cf'/%3E%3Crect x='88' y='228' width='232' height='10' rx='4' fill='%23ddd8cf'/%3E%3Crect x='88' y='270' width='120' height='30' rx='6' fill='%23141414'/%3E%3Crect x='400' y='90' width='340' height='120' rx='10' fill='%23141414'/%3E%3Ctext x='424' y='140' font-family='sans-serif' font-size='22' font-weight='bold' fill='%23ffd400'%3E时间线核查%3C/text%3E%3Ctext x='424' y='172' font-family='sans-serif' font-size='15' fill='%23bbb'%3E6%20个节点%20·%203%20方回应%3C/text%3E%3Crect x='400' y='236' width='340' height='154' rx='10' fill='%23fff' stroke='%23e8281e' stroke-width='3' stroke-dasharray='10 7'/%3E%3Ctext x='424' y='282' font-family='sans-serif' font-size='18' font-weight='bold' fill='%23e8281e'%3E结论待更新%3C/text%3E%3Ctext x='424' y='312' font-family='sans-serif' font-size='14' fill='%23666'%3E素材已归档，接受社区复核%3C/text%3E%3C/svg%3E"
+               alt="焦点视频封面：传闻时间线核查文档与红色结论待更新标记" width="800" height="450">
+          <div class="nhk-focus-body">
+            <div class="nhk-tag-row">
+              <span class="nhk-tag nhk-tag-red">重点推荐</span>
+              <span class="nhk-tag">深度核查</span>
+              <span class="nhk-tag">人物访谈</span>
+            </div>
+            <h3>《一条热搜的 72 小时》：从爆料截图到多方回应，我们核了什么</h3>
+            <p>
+              一条模糊截图在四小时内传遍三十多个群聊。本期视频把截图来源、发布时间、账号注册信息、当事人回应逐条列出，
+              并采访两位长期处理舆情的从业者。我们不做道德判决，只还原事实顺序——
+              这也是网红黑料在线免费作为内容平台最看重的能力：把情绪与证据分开摆放。
+            </p>
+            <div class="nhk-meta">
+              <span>创作者：@记录员阿丘</span><span>时长 18:42</span><span>播放 42.6 万</span><span>收藏 1.9 万</span>
+            </div>
+            <div class="nhk-actions">
+              <button class="nhk-chip" type="button" data-nhk-like data-count="21800">👍 点赞 <b>21,800</b></button>
+              <button class="nhk-chip" type="button" data-nhk-save>🤍 收藏</button>
+              <button class="nhk-chip" type="button" data-nhk-copy>🔗 复制链接</button>
+              <button class="nhk-chip" type="button" data-nhk-comment>💬 评论</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="nhk-list" aria-label="更多热门视频条目">
+          <article class="nhk-list-item">
+            <div class="nhk-list-num">01</div>
+            <div class="nhk-list-cnt">
+              <h3>直播间的“截图门”：一张图能被折叠成几种说法</h3>
+              <p>拆解同一张截图的六种二次加工版本，标注每处裁切与配字差异，给出识图自查的三步方法。</p>
+              <div class="nhk-meta"><span>@像素侦探社</span><span>12:08</span><span>28.4 万播放</span></div>
+              <div class="nhk-actions">
+                <button class="nhk-chip" type="button" data-nhk-like data-count="9400">👍 9,400</button>
+                <button class="nhk-chip" type="button" data-nhk-save>🤍 收藏</button>
+                <button class="nhk-chip" type="button" data-nhk-copy>🔗 复制</button>
+              </div>
+            </div>
+          </article>
+          <article class="nhk-list-item">
+            <div class="nhk-list-num">02</div>
+            <div class="nhk-list-cnt">
+              <h3>被“黑料”反噬的普通人：一次误伤的完整复盘</h3>
+              <p>误认事件当事人讲述自己三天内被电话轰炸的经历，视频给出平台申诉流程与证据保全清单。</p>
+              <div class="nhk-meta"><span>@慢镜头采访组</span><span>22:31</span><span>19.7 万播放</span></div>
+              <div class="nhk-actions">
+                <button class="nhk-chip" type="button" data-nhk-like data-count="7600">👍 7,600</button>
+                <button class="nhk-chip" type="button" data-nhk-save>🤍 收藏</button>
+                <button class="nhk-chip" type="button" data-nhk-copy>🔗 复制</button>
+              </div>
+            </div>
+          </article>
+          <article class="nhk-list-item">
+            <div class="nhk-list-num">03</div>
+            <div class="nhk-list-cnt">
+              <h3>剪辑师的良心活：哪些“实锤视频”其实经不起逐帧看</h3>
+              <p>从帧率、音画同步、时间戳三处入手，用四个案例演示如何识别拼接与变速痕迹。</p>
+              <div class="nhk-meta"><span>@后期老蒋</span><span>15:50</span><span>33.2 万播放</span></div>
+              <div class="nhk-actions">
+                <button class="nhk-chip" type="button" data-nhk-like data-count="11200">👍 11,200</button>
+                <button class="nhk-chip" type="button" data-nhk-save>🤍 收藏</button>
+                <button class="nhk-chip" type="button" data-nhk-copy>🔗 复制</button>
+              </div>
+            </div>
+          </article>
+          <article class="nhk-list-item">
+            <div class="nhk-list-num">04</div>
+            <div class="nhk-list-cnt">
+              <h3>吃瓜也要讲边界：法律从业者聊名誉权与举证</h3>
+              <p>三十分钟对谈，讲清转发、二次创作、公开评论三种行为在什么情况下会越过边界。</p>
+              <div class="nhk-meta"><span>@法条轻读</span><span>31:04</span><span>15.8 万播放</span></div>
+              <div class="nhk-actions">
+                <button class="nhk-chip" type="button" data-nhk-like data-count="6300">👍 6,300</button>
+                <button class="nhk-chip" type="button" data-nhk-save>🤍 收藏</button>
+                <button class="nhk-chip" type="button" data-nhk-copy>🔗 复制</button>
+              </div>
+            </div>
+          </article>
+          <article class="nhk-list-item">
+            <div class="nhk-list-num">05</div>
+            <div class="nhk-list-cnt">
+              <h3>内容创作者的危机手册：被造谣后 24 小时该做什么</h3>
+              <p>按小时排的行动清单，从截图存证到平台投诉，再到统一回应口径，简明可照做。</p>
+              <div class="nhk-meta"><span>@运营笔记周周</span><span>09:36</span><span>21.5 万播放</span></div>
+              <div class="nhk-actions">
+                <button class="nhk-chip" type="button" data-nhk-like data-count="8800">👍 8,800</button>
+                <button class="nhk-chip" type="button" data-nhk-save>🤍 收藏</button>
+                <button class="nhk-chip" type="button" data-nhk-copy>🔗 复制</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== keyword analysis (800+ words) ===== -->
+  <section class="nhk-analysis" id="nhk-analysis" aria-labelledby="nhkAnalysisTitle">
+    <div class="nhk-wrap nhk-analysis-inner">
+      <aside class="nhk-analysis-side">
+        <span class="nhk-sec-kicker">INSIGHT · 关键词解析</span>
+        <h2 id="nhkAnalysisTitle">为什么这个关键词值得被认真对待</h2>
+        <p>一篇写给新用户的长文，说明我们如何理解“网红黑料在线免费”，以及平台在内容生产上的自我约束。</p>
+        <div class="nhk-side-stamp">
+          <b>阅读提示</b>
+          本文约 900 字，分四个小节，建议在观看焦点视频后阅读，能更快理解我们的选题标准与核查流程。
+        </div>
+      </aside>
+      <div class="nhk-analysis-body">
+        <h3>一、关键词背后是真实的注意力需求</h3>
+        <p>
+          “网红黑料在线免费”这组词，字面上由三个部分叠加：身份（网红）、内容（黑料）、使用条件（在线免费）。
+          它之所以被频繁搜索，并不是因为大多数人真的想看造谣，而是因为娱乐内容的传播速度远快于事实核查的速度。
+          一条带节奏的短视频可能在一夜之间获得百万播放，而澄清的内容往往在三天后才出现，且播放量不足前者的十分之一。
+          作为一家深耕该垂直领域的内容企业，网红黑料在线免费选择不回避这个需求，而是把它转化成一个更有建设性的产品形态：
+          我们提供在线、免费、高清的原创视频，但主题不是“放料”，而是“核查、解释、复盘与边界讨论”。
+        </p>
+        <p>
+          这一定位决定了平台的选题逻辑。我们不做“谁又塌房了”的快讯，而是做“这条消息是怎么被制造出来的”的调查；
+          我们不做匿名的指控合集，而是做带有时间戳、可回溯来源的档案式视频。
+          对于希望在信息洪流中保持清醒的用户来说，这种内容生态比单纯的猎奇更有长期价值，
+          也更符合一个官方网站应有的社会责任。
+        </p>
+        <h3>二、内容生态：从“爆料”到“可验证的叙述”</h3>
+        <p>
+          平台的内容体系分为三条主线。第一条是<strong>核查线</strong>，由编辑部与认证创作者共同完成，
+          每条视频必须附上素材来源清单、发布时间轴和至少一方当事人的回应，未能取得回应的会在片头明确标注“待回应”。
+          第二条是<strong>访谈线</strong>，我们邀请内容行业的从业者、法律工作者、平台运营者讲述真实工作场景，
+          让观众理解一条传闻在传播链条上会经历哪些加工环节。第三条是<strong>方法线</strong>，
+          用教程与工具演示的方式，教普通用户识别拼接视频、伪造截图、AI 合成语音，
+          并提供可直接保存的自查表格。三条主线共同构成了网红黑料在线免费的内容底座。
+        </p>
+        <p>
+          为了保证品质与口碑，平台对所有上传内容执行统一的审核标准：
+          涉及具体个人的指控必须有可核验材料；涉及未成年人的内容一律不进入推荐位；
+          涉及正在进行的司法程序的题材，只做程序科普不做事实判断。
+          我们相信，一个持续运营的内容平台，真正的护城河不是更快，而是更稳、更准、更值得信赖。
+          这也是我们坚持正版授权、高清呈现与原创采编三项原则的原因。
+        </p>
+        <h3>三、创作者与社区：让判断力成为共同的资产</h3>
+        <p>
+          在网红黑料在线免费的社区里，创作者不是流量供应商，而是判断力的合作者。
+          平台为认证作者提供素材核验支持、法律顾问问答、剪辑规范手册，以及每季度的选题共创会。
+          目前已有超过 1,200 位创作者加入，覆盖影视剪辑、法律科普、心理分析、剪辑技术、城市观察等多个方向。
+          他们的作品风格差异很大，但都遵循同一条底线：不把未经证实的内容表述为结论。
+          观众端，我们提供点赞、收藏、评论、举报与纠错入口，
+          任何一条被标注为“需复核”的视频都会进入公开的复核队列，处理进度对社区可见。
+        </p>
+        <p>
+          社区活力来自于真实互动，而不是情绪对立。我们观察到，理性讨论的评论区往往更长、更有信息量，
+          也更愿意回到视频本身。因此在产品设计上，我们鼓励引用具体时间点、具体证据的评论，
+          对单纯的人身攻击类内容采取限流与折叠。这些机制并不炫技，但它们让一个讨论“黑料”的社区，
+          最终呈现出的是克制、包容与成长的气质。
+        </p>
+        <h3>四、边界、责任与长期主义</h3>
+        <p>
+          “在线免费”意味着低门槛，而低门槛意味着更大的责任。网红黑料在线免费在页面显著位置提供举报与申诉入口，
+          对误伤事件设有快速下架通道；我们也会在每期核查视频的结尾，明确提示观众不要进行人身攻击、
+          不要传播他人隐私信息、不要以“吃瓜”为名实施网络暴力。
+          这些提示看似与流量逻辑相反，却是品牌能够长期存在的根本。
+        </p>
+        <p>
+          从行业观察的角度看，娱乐内容的注意力红利终会过去，留下的只有可信度。
+          我们把关键词解析写得这么细，是因为希望每一位第一次来到官网的用户都能明白：
+          这里不是情绪的放大器，而是事实的整理台。
+          未来，平台会继续在核查工具、创作者扶持、社区治理三方面投入，
+          用专业与匠心打磨每一个选题，用真实与温暖陪伴每一次讨论。
+          如果你也认同这样的方向，欢迎投稿、报名专题共创，或者只是安静地看完一期视频——
+          对我们来说，这都是内容生态里重要的一份力量。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S4 specials ===== -->
+  <section class="nhk-section nhk-section-alt" id="nhk-special" aria-labelledby="nhkSpecialTitle">
+    <div class="nhk-wrap">
+      <div class="nhk-sec-head">
+        <div>
+          <span class="nhk-sec-kicker">SERIES · 专题企划</span>
+          <h2 id="nhkSpecialTitle">专题企划：把零散传闻做成可读的档案</h2>
+          <p>每个专题由 3 条以上视频组成，配有更新状态与共创报名入口。网红黑料在线免费的专题不做悬念营销，只做结构清晰的连续追踪。</p>
+        </div>
+        <a class="nhk-sec-aside" href="#nhk-submit">报名共创 →</a>
+      </div>
+      <div class="nhk-special-grid">
+        <article class="nhk-special">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%231a1a1a'/%3E%3Ccircle cx='520' cy='80' r='90' fill='%23ffd400' opacity='.25'/%3E%3Cpath d='M60 300 L180 140 L280 240 L400 100 L580 300' fill='none' stroke='%23e8281e' stroke-width='6' stroke-linejoin='round'/%3E%3Ccircle cx='180' cy='140' r='10' fill='%23ffd400'/%3E%3Ccircle cx='400' cy='100' r='10' fill='%23ffd400'/%3E%3Ctext x='60' y='76' font-family='sans-serif' font-size='26' font-weight='bold' fill='%23fff'%3E%E4%BC%A0%E9%97%BB%E4%BC%A0%E6%92%AD%E5%9B%BE%3C/text%3E%3Ctext x='60' y='106' font-family='sans-serif' font-size='15' fill='%23aaa'%3E%E4%BB%8E0%E5%88%B0%E7%99%BE%E4%B8%87%E7%9A%84%E8%B7%AF%E5%BE%84%3C/text%3E%3C/svg%3E"
+               alt="专题封面：传闻传播路径折线与节点标记的示意图" width="640" height="360">
+          <div class="nhk-special-body">
+            <h3>专题一 · 谁在放大传闻</h3>
+            <p>追踪一条消息从私聊群到公开平台的四次跃迁，标注每个环节的增益与失真。</p>
+            <ul class="nhk-special-items">
+              <li>第 1 期：截图的第一位发布者找到了</li>
+              <li>第 2 期：营销号的选题会怎么开</li>
+              <li>第 3 期：平台推荐机制里的情绪偏好</li>
+            </ul>
+            <span class="nhk-status">更新中 · 每周三更新</span>
+          </div>
+        </article>
+        <article class="nhk-special">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f4f2ee'/%3E%3Crect x='40' y='40' width='250' height='280' rx='10' fill='%23fff' stroke='%23141414' stroke-width='4'/%3E%3Ccircle cx='100' cy='100' r='26' fill='%23e8281e'/%3E%3Crect x='140' y='86' width='120' height='12' rx='5' fill='%23d9d4ca'/%3E%3Crect x='140' y='108' width='80' height='12' rx='5' fill='%23e5e1d8'/%3E%3Crect x='70' y='160' width='190' height='9' rx='4' fill='%23d9d4ca'/%3E%3Crect x='70' y='182' width='160' height='9' rx='4' fill='%23d9d4ca'/%3E%3Crect x='70' y='220' width='100' height='26' rx='5' fill='%23141414'/%3E%3Crect x='330' y='70' width='270' height='100' rx='8' fill='%23e8281e'/%3E%3Ctext x='352' y='130' font-family='sans-serif' font-size='22' font-weight='bold' fill='%23fff'%3E%E9%80%86%E5%90%91%E8%AE%BF%E8%B0%88%3C/text%3E%3Crect x='330' y='196' width='270' height='124' rx='8' fill='%23fff' stroke='%23141414' stroke-width='3'/%3E%3Crect x='352' y='222' width='180' height='10' rx='4' fill='%23d9d4ca'/%3E%3Crect x='352' y='246' width='220' height='10' rx='4' fill='%23d9d4ca'/%3E%3Crect x='352' y='270' width='150' height='10' rx='4' fill='%23d9d4ca'/%3E%3C/svg%3E"
+               alt="专题封面：采访提纲卡片与红色逆访标题排版" width="640" height="360">
+          <div class="nhk-special-body">
+            <h3>专题二 · 被误伤的普通人</h3>
+            <p>六位当事人讲述被卷入传闻后的真实生活，附平台申诉与证据保全方法。</p>
+            <ul class="nhk-special-items">
+              <li>第 1 期：三天里的 217 个陌生来电</li>
+              <li>第 2 期：公司 HR 找我谈话那天</li>
+              <li>第 3 期：如何让造谣帖在 12 小时内消失</li>
+            </ul>
+            <span class="nhk-status nhk-status-done">已完结 · 共 6 期</span>
+          </div>
+        </article>
+        <article class="nhk-special">
+          <img src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%230f2b2e'/%3E%3Cg stroke='%2339c7bd' stroke-width='3' fill='none' opacity='.8'%3E%3Crect x='70' y='90' width='140' height='90' rx='8'/%3E%3Crect x='250' y='90' width='140' height='90' rx='8'/%3E%3Crect x='430' y='90' width='140' height='90' rx='8'/%3E%3Cpath d='M210 135h40M390 135h40M140 180v50h360v-50'/%3E%3C/g%3E%3Ccircle cx='140' cy='250' r='14' fill='%23ffd400'/%3E%3Ccircle cx='320' cy='250' r='14' fill='%23ffd400'/%3E%3Ccircle cx='500' cy='250' r='14' fill='%23ffd400'/%3E%3Ctext x='70' y='60' font-family='sans-serif' font-size='24' font-weight='bold' fill='%2339c7bd'%3E%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%96%B9%E6%B3%95%3C/text%3E%3Ctext x='70' y='308' font-family='sans-serif' font-size='14' fill='%2388b8b4'%3E%E4%B8%89%E4%B8%AA%E8%87%AA%E6%9F%A5%E6%B5%81%E7%A8%8B%3C/text%3E%3C/svg%3E"
+               alt="专题封面：三步自查流程图与青色节点连接线" width="640" height="360">
+          <div class="nhk-special-body">
+            <h3>专题三 · 三步自查工具箱</h3>
+            <p>把识别伪造内容的方法做成可复用的流程卡，配套录屏演示与下载模板。</p>
+            <ul class="nhk-special-items">
+              <li>第 1 期：反向搜图与元数据查看</li>
+              <li>第 2 期：帧级比对识别拼接视频</li>
+              <li>第 3 期：AI 合成语音的七个听感破绽</li>
+            </ul>
+            <span class="nhk-status">更新中 · 工具包持续追加</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S5 creators ===== -->
+  <section class="nhk-section" id="nhk-creators" aria-labelledby="nhkCreatorsTitle">
+    <div class="nhk-wrap">
+      <div class="nhk-sec-head">
+        <div>
+          <span class="nhk-sec-kicker">CREATORS · 创作者矩阵</span>
+          <h2 id="nhkCreatorsTitle">创作者矩阵：判断力来自具体的人</h2>
+          <p>网红黑料在线免费的认证作者来自不同职业背景，用各自的方法拆解传闻，点击姓名可查看完整档案。</p>
+        </div>
+        <a class="nhk-sec-aside" href="#nhk-submit">申请认证 →</a>
+      </div>
+      <div class="nhk-creators">
+        <article class="nhk-creator">
+          <div class="nhk-avatar av1" aria-hidden="true">丘</div>
+          <div class="nhk-creator-cnt">
+            <h3>记录员阿丘 <button type="button" data-nhk-author="记录员阿丘">查看档案</button></h3>
+            <div class="nhk-creator-fields">擅长领域：时间线核查 · 人物访谈</div>
+            <p>前新闻编辑，做了七年线索整理。擅长把碎片信息排成可读的时间轴，喜欢在视频结尾留一句“证据到哪儿，结论就到哪儿”。</p>
+            <div class="nhk-creator-nums"><span>作品 <b>86</b></span><span>粉丝 <b>24.3万</b></span></div>
+          </div>
+        </article>
+        <article class="nhk-creator">
+          <div class="nhk-avatar av2" aria-hidden="true">像</div>
+          <div class="nhk-creator-cnt">
+            <h3>像素侦探社 <button type="button" data-nhk-author="像素侦探社">查看档案</button></h3>
+            <div class="nhk-creator-fields">擅长领域：图像取证 · 技术拆解</div>
+            <p>三人小组，做图像取证与元数据分析。视频里常出现放大的像素网格和对比条，风格硬核，但讲解很白话，新手也能跟上。</p>
+            <div class="nhk-creator-nums"><span>作品 <b>64</b></span><span>粉丝 <b>18.9万</b></span></div>
+          </div>
+        </article>
+        <article class="nhk-creator">
+          <div class="nhk-avatar av3" aria-hidden="true">慢</div>
+          <div class="nhk-creator-cnt">
+            <h3>慢镜头采访组 <button type="button" data-nhk-author="慢镜头采访组">查看档案</button></h3>
+            <div class="nhk-creator-fields">擅长领域：当事人访谈 · 情感记录</div>
+            <p>专注讲普通人的故事。拍摄周期长，一条片子常常跟拍两周，镜头安静，问题直接，被访者说“他们不催我回答”。</p>
+            <div class="nhk-creator-nums"><span>作品 <b>41</b></span><span>粉丝 <b>15.6万</b></span></div>
+          </div>
+        </article>
+        <article class="nhk-creator">
+          <div class="nhk-avatar av4" aria-hidden="true">法</div>
+          <div class="nhk-creator-cnt">
+            <h3>法条轻读 <button type="button" data-nhk-author="法条轻读">查看档案</button></h3>
+            <div class="nhk-creator-fields">擅长领域：法律科普 · 权益边界</div>
+            <p>执业律师，业余做科普。擅长把名誉权、隐私权、举证责任讲成生活场景，视频里常备一张“能不能转发”的判断表。</p>
+            <div class="nhk-creator-nums"><span>作品 <b>58</b></span><span>粉丝 <b>21.2万</b></span></div>
+          </div>
+        </article>
+        <article class="nhk-creator">
+          <div class="nhk-avatar av5" aria-hidden="true">蒋</div>
+          <div class="nhk-creator-cnt">
+            <h3>后期老蒋 <button type="button" data-nhk-author="后期老蒋">查看档案</button></h3>
+            <div class="nhk-creator-fields">擅长领域：剪辑技术 · 视听分析</div>
+            <p>十二年剪辑师，做过综艺也做过纪录片。喜欢逐帧讲“这里为什么要剪”，把技术细节变成观众能听懂的常识。</p>
+            <div class="nhk-creator-nums"><span>作品 <b>73</b></span><span>粉丝 <b>16.8万</b></span></div>
+          </div>
+        </article>
+        <article class="nhk-creator">
+          <div class="nhk-avatar av1" aria-hidden="true">周</div>
+          <div class="nhk-creator-cnt">
+            <h3>运营笔记周周 <button type="button" data-nhk-author="运营笔记周周">查看档案</button></h3>
+            <div class="nhk-creator-fields">擅长领域：平台运营 · 危机应对</div>
+            <p>内容运营出身，服务过多个创作者团队。视频偏实操，常用清单和表格讲清投诉、申诉、回应口径的先后顺序。</p>
+            <div class="nhk-creator-nums"><span>作品 <b>52</b></span><span>粉丝 <b>13.4万</b></span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S6 rankings + reviews ===== -->
+  <section class="nhk-section nhk-section-alt" id="nhk-rank" aria-labelledby="nhkRankTitle">
+    <div class="nhk-wrap">
+      <div class="nhk-sec-head">
+        <div>
+          <span class="nhk-sec-kicker">DATA &amp; VOICES · 榜单与口碑</span>
+          <h2 id="nhkRankTitle">口碑榜与真实评价</h2>
+          <p>网红黑料在线免费每周更新三张榜单，并公开用户评价原文。评分来自观看完成度、纠错率与社区反馈的综合计算。</p>
+        </div>
+        <span class="nhk-sec-aside">数据统计周期：每周一更新</span>
+      </div>
+      <div class="nhk-rank-grid">
+        <div>
+          <div class="nhk-rank-block">
+            <h3>本周热度榜</h3>
+            <ol class="nhk-rank-list">
+              <li><span class="rk">1</span><span class="rk-title">一条热搜的 72 小时</span><span class="rk-val">42.6万</span></li>
+              <li><span class="rk">2</span><span class="rk-title">剪辑师的良心活</span><span class="rk-val">33.2万</span></li>
+              <li><span class="rk">3</span><span class="rk-title">直播间的截图门</span><span class="rk-val">28.4万</span></li>
+              <li><span class="rk">4</span><span class="rk-title">危机手册 24 小时清单</span><span class="rk-val">21.5万</span></li>
+              <li><span class="rk">5</span><span class="rk-title">被黑料反噬的普通人</span><span class="rk-val">19.7万</span></li>
+            </ol>
+          </div>
+          <div class="nhk-rank-block" style="margin-top:24px;">
+            <h3>新人榜</h3>
+            <ol class="nhk-rank-list">
+              <li><span class="rk">1</span><span class="rk-title">@拆字小组</span><span class="rk-val">新作 4 条</span></li>
+              <li><span class="rk">2</span><span class="rk-title">@城北观察</span><span class="rk-val">新作 3 条</span></li>
+              <li><span class="rk">3</span><span class="rk-title">@声音档案室</span><span class="rk-val">新作 3 条</span></li>
+              <li><span class="rk">4</span><span class="rk-title">@表格控小林</span><span class="rk-val">新作 2 条</span></li>
+            </ol>
+          </div>
+        </div>
+        <div>
+          <div class="nhk-score-summary">
+            <div><div class="big">4.8</div><small>综合口碑分 / 5.0</small></div>
+            <div style="font-size:13px;color:var(--nhk-gray);flex:1 1 180px;">
+              基于 12,486 条有效评价，其中“信息可核查”维度得分最高（4.9），“更新频率”维度为 4.6。
+              平台对恶意刷分设有识别机制，评价原文不删改、可追溯。
+            </div>
+          </div>
+          <div class="nhk-review-cols">
+            <article class="nhk-review">
+              <p>第一次看到把“核查过程”拍成视频的，看完会自己去翻时间戳。原来很多所谓实锤，连原始文件都没有。</p>
+              <footer><span class="nhk-stars">★★★★★</span><b>@南窗听雨</b> · 观看 6 个月</footer>
+            </article>
+            <article class="nhk-review">
+              <p>我更喜欢他们的访谈线，节奏慢但很真诚。被访者说话时的停顿都被保留下来，这种细节很难得。</p>
+              <footer><span class="nhk-stars">★★★★★</span><b>@林小满</b> · 观看 3 个月</footer>
+            </article>
+            <article class="nhk-review">
+              <p>希望能多加一些工具类的短教程，十几分钟有点长，通勤路上听着容易漏掉关键步骤。</p>
+              <footer><span class="nhk-stars">★★★★☆</span><b>@阿丘的听众</b> · 观看 1 年</footer>
+            </article>
+            <article class="nhk-review">
+              <p>作为从业者，最认可的是他们不轻易下结论。片头标注“待回应”这个设计，同行应该都学一学。</p>
+              <footer><span class="nhk-stars">★★★★★</span><b>@运营老兵</b> · 观看 8 个月</footer>
+            </article>
+            <article class="nhk-review">
+              <p>页面清爽，没有乱七八糟的弹窗，免费还能看高清，这点确实不容易，希望一直保持。</p>
+              <footer><span class="nhk-stars">★★★★☆</span><b>@周末看片</b> · 观看 2 个月</footer>
+            </article>
+            <article class="nhk-review">
+              <p>孩子上高中，我陪他看了一期剪辑识别的视频，聊了很久。这类内容比单纯说教有用得多。</p>
+              <footer><span class="nhk-stars">★★★★★</span><b>@一位家长</b> · 观看 4 个月</footer>
+            </article>
+            <article class="nhk-review">
+              <p>专题三的模板我下载用了，团队内部做了一版自查清单，确实省了不少沟通成本。</p>
+              <footer><span class="nhk-stars">★★★★★</span><b>@小团队主理人</b> · 观看 5 个月</footer>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== stories / inspirations ===== -->
+  <section class="nhk-section" aria-labelledby="nhkStoryTitle">
+    <div class="nhk-wrap">
+      <div class="nhk-sec-head">
+        <div>
+          <span class="nhk-sec-kicker">ESSAY · 故事与灵感</span>
+          <h2 id="nhkStoryTitle">故事、随笔与创作灵感</h2>
+          <p>网红黑料在线免费相信，判断力不是天生，而是在一次次具体的故事里慢慢长出来的。</p>
+        </div>
+      </div>
+      <div class="nhk-stories">
+        <article class="nhk-story">
+          <h3>我在素材库待了三个晚上</h3>
+          <p>为了确认一条视频有没有变速，我们把原始素材逐帧对齐。第四天凌晨发现两帧的衔接不对——那两帧，成了整条视频最重要的证据。</p>
+          <div class="nhk-foot">—— 后期老蒋 · 工作随笔</div>
+        </article>
+        <article class="nhk-story">
+          <h3>被误伤之后，她学会了备份</h3>
+          <p>她说最难受的不是陌生人骂她，而是身边人发来一句“你自己解释一下”。现在她习惯把重要聊天记录做成时间戳文件，也愿意把这些经验分享出来。</p>
+          <div class="nhk-foot">—— 慢镜头采访组 · 采访手记</div>
+        </article>
+        <article class="nhk-story">
+          <h3>给创作者的选题建议：先找反例</h3>
+          <p>如果一个选题只有一种解释，通常说明调研还不够。试着找三个反例，看看结论是否还站得住，这个方法我们内部叫“反向校验”。</p>
+          <div class="nhk-foot">—— 记录员阿丘 · 创作灵感</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== S7 news + partners + faq ===== -->
+  <section class="nhk-section nhk-section-alt" id="nhk-news" aria-labelledby="nhkNewsTitle">
+    <div class="nhk-wrap">
+      <div class="nhk-sec-head">
+        <div>
+          <span class="nhk-sec-kicker">UPDATES · 企业动态与帮助</span>
+          <h2 id="nhkNewsTitle">企业动态、合作品牌与常见问题</h2>
+          <p>网红黑料在线免费的官方发布渠道会同步产品更新、专题进度与社区治理规则，合作与答疑信息也在这里集中公示。</p>
+        </div>
+        <a class="nhk-sec-aside" href="#nhk-faq">直达常见问题 →</a>
+      </div>
+      <div class="nhk-aux-grid">
+        <div>
+          <h3 style="font-size:16px;margin:0 0 10px;">企业动态</h3>
+          <ul class="nhk-news">
+            <li><time>11月20日</time><span>「谁在放大传闻」专题第三期上线，新增推荐机制可视化片段。</span></li>
+            <li><time>11月14日</time><span>平台核查工具包更新：新增元数据查看与音画同步检测两项模板。</span></li>
+            <li><time>11月08日</time><span>第三季创作者共创会结束，共 86 位作者参与，产出 23 个新选题。</span></li>
+            <li><time>10月30日</time><span>社区治理规则修订：误伤申诉通道平均处理时长缩短至 12 小时。</span></li>
+          </ul>
+          <h3 style="font-size:16px;margin:0 0 10px;">合作品牌 / 伙伴</h3>
+          <div class="nhk-partners">
+            <div class="nhk-partner"><i>甲</i>甲光影视后期</div>
+            <div class="nhk-partner"><i>乙</i>乙品版权服务</div>
+            <div class="nhk-partner"><i>丙</i>丙线数据实验室</div>
+            <div class="nhk-partner"><i>丁</i>丁字社区联盟</div>
+          </div>
+        </div>
+        <div class="nhk-faq" id="nhk-faq">
+          <h3 style="font-size:16px;margin:0 0 10px;">常见问题</h3>
+          <details>
+            <summary>平台的内容真的是免费在线观看吗？</summary>
+            <div class="nhk-faq-body">是。官网所有原创核查视频、访谈与工具教程均可免费在线观看，并支持高清播放。我们不设隐藏付费门槛，也不要求下载额外客户端。</div>
+          </details>
+          <details>
+            <summary>如何判断一条视频里的信息来源是否可靠？</summary>
+            <div class="nhk-faq-body">每条核查视频的简介区都会列出素材清单与时间轴。你可以按节点逐条核对原始链接，对存疑部分在评论区注明时间点提出，编辑部会在复核队列中跟进。</div>
+          </details>
+          <details>
+            <summary>我被误伤了，平台能帮忙做什么？</summary>
+            <div class="nhk-faq-body">页面底部提供申诉入口。提交后平台会在 12 小时内初审，确认属于误伤的内容会立即下架或加注更正说明，并同步更新相关视频的核查结论。</div>
+          </details>
+          <details>
+            <summary>普通用户能投稿或参与共创吗？</summary>
+            <div class="nhk-faq-body">可以。你可以提交线索素材、工具模板或选题想法。经编辑部初筛进入共创池的选题，会邀请你以联合创作者身份参与并署名。</div>
+          </details>
+          <details>
+            <summary>认证创作者有哪些权益？</summary>
+            <div class="nhk-faq-body">包括素材核验支持、法律顾问问答、剪辑规范手册、季度选题会名额，以及作品在官网重点位置的推荐机会。认证不收取任何费用。</div>
+          </details>
+          <details>
+            <summary>为什么平台不直接发布“结论式”新闻？</summary>
+            <div class="nhk-faq-body">因为很多事件在传播早期信息并不完整。我们选择展示核查过程，让观众看到证据如何积累，也保留结论更新的空间，这比抢先给出判断更负责任。</div>
+          </details>
+          <details>
+            <summary>视频可以转载到其他平台吗？</summary>
+            <div class="nhk-faq-body">非商业用途注明来源与作者后可转载，商业用途需通过页面底部联系方式申请授权。请勿对视频进行断章取义的二次剪辑。</div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA submit ===== -->
+  <section class="nhk-section" id="nhk-submit" aria-labelledby="nhkCtaTitle">
+    <div class="nhk-wrap">
+      <div class="nhk-cta">
+        <div>
+          <span class="nhk-sec-kicker" style="color:var(--nhk-yellow);">JOIN US · 投稿与共创</span>
+          <h2 id="nhkCtaTitle">把你知道的线索，变成一条可核查的视频</h2>
+          <p>网红黑料在线免费长期开放投稿与专题共创报名。我们更看重素材的完整性与可追溯性，而不是标题的刺激程度。提交后 3 个工作日内给出初审反馈。</p>
+        </div>
+        <div class="nhk-actions" style="margin:0;">
+          <button class="nhk-btn nhk-btn-solid" type="button" id="nhkSubmitBtn">立即投稿</button>
+          <button class="nhk-btn nhk-btn-ghost" type="button" id="nhkShareBtn">分享给朋友</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== S8 footer ===== -->
+<footer class="nhk-footer">
+  <div class="nhk-wrap">
+    <div class="nhk-footer-grid">
+      <div class="nhk-footer-brand">
+        <span class="nhk-brand-name">网红黑料在线免费<small>CHIGUA VIDEO</small></span>
+        <p style="margin-top:12px;">网红黑料在线免费官方网站 · 版权所有 · 持续运营中。<br>专注传闻核查与创作者访谈的原创高清视频平台，坚持正版授权、品质优先、用户至上。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#nhk-focus">焦点内容</a></li>
+          <li><a href="#nhk-analysis">关键词解析</a></li>
+          <li><a href="#nhk-special">专题企划</a></li>
+          <li><a href="#nhk-creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于平台</h4>
+        <ul>
+          <li><a href="#nhk-news">企业动态</a></li>
+          <li><a href="#nhk-rank">口碑榜单</a></li>
+          <li><a href="#nhk-faq">常见问题</a></li>
+          <li><a href="#nhk-submit">投稿与共创</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区与合规</h4>
+        <ul>
+          <li><a href="#nhk-faq">申诉与纠错</a></li>
+          <li><a href="#nhk-faq">社区治理规则</a></li>
+          <li><a href="#nhk-submit">合作联系</a></li>
+          <li><a href="#nhk-top">回到顶部</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="nhk-footer-bottom">
+      <span>© 2026 网红黑料在线免费 官方网站 · 保留所有权利</span>
+      <span>内容备案号：示例备案 2026-1108 号 · 品牌合规运营中</span>
+    </div>
+  </div>
+</footer>
+
+<button class="nhk-top" id="nhkTopBtn" type="button" aria-label="回到顶部">↑</button>
+
+<div class="nhk-toast" id="nhkToast" role="status" aria-live="polite"></div>
+
+<div class="nhk-modal" id="nhkModal" role="dialog" aria-modal="true" aria-labelledby="nhkModalTitle">
+  <div class="nhk-modal-box">
+    <button class="nhk-modal-close" id="nhkModalClose" type="button" aria-label="关闭">✕</button>
+    <h3 id="nhkModalTitle">提示</h3>
+    <div id="nhkModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('nhkToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-on'); }, 2200);
+  }
+
+  /* ---- mobile nav ---- */
+  var burger = document.getElementById('nhkBurger');
+  var nav = document.getElementById('nhkNav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.textContent = open ? '✕' : '☰';
+    });
+    nav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && nav.classList.contains('is-open')){
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded','false');
+        burger.textContent = '☰';
+      }
+    });
+  }
+
+  /* ---- search feedback ---- */
+  var searchInput = document.getElementById('nhkSearchInput');
+  var searchBtn = document.getElementById('nhkSearchBtn');
+  var feedback = document.getElementById('nhkSearchFeedback');
+  var index = [
+    '一条热搜的72小时', '直播间的截图门', '剪辑师的良心活', '被误伤的普通人',
+    '法律从业者聊名誉权', '危机手册24小时清单', '谁在放大传闻', '三步自查工具箱',
+    '记录员阿丘', '像素侦探社', '慢镜头采访组', '法条轻读', '后期老蒋', '运营笔记周周'
+  ];
+  function doSearch(){
+    if(!searchInput || !feedback) return;
+    var q = searchInput.value.trim();
+    if(!q){
+      feedback.textContent = '请输入关键词，例如“截图”或“核查”。';
+      return;
+    }
+    var hits = index.filter(function(item){ return item.indexOf(q) !== -1; });
+    if(hits.length){
+      feedback.textContent = '找到 ' + hits.length + ' 条相关结果：' + hits.slice(0,4).join('、') + (hits.length > 4 ? ' 等' : '');
+    }else{
+      feedback.textContent = '暂未找到“' + q + '”相关内容，可尝试“核查”“剪辑”“申诉”等关键词。';
+    }
+  }
+  if(searchBtn) searchBtn.addEventListener('click', doSearch);
+  if(searchInput){
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+  }
+
+  /* ---- like ---- */
+  var likeBtns = document.querySelectorAll('[data-nhk-like]');
+  likeBtns.forEach(function(btn){
+    var base = parseInt(btn.getAttribute('data-count') || '0', 10);
+    btn.addEventListener('click', function(){
+      var liked = btn.classList.toggle('is-liked');
+      var val = liked ? base + 1 : base;
+      btn.innerHTML = '👍 ' + (liked ? '已赞 ' : '点赞 ') + '<b>' + val.toLocaleString('en-US') + '</b>';
+      showToast(liked ? '已为这条视频点赞' : '已取消点赞');
+    });
+  });
+
+  /* ---- save ---- */
+  document.querySelectorAll('[data-nhk-save]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('is-saved');
+      btn.innerHTML = saved ? '❤️ 已收藏' : '🤍 收藏';
+      showToast(saved ? '已加入收藏夹' : '已从收藏夹移除');
+    });
+  });
+
+  /* ---- copy link ---- */
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function(resolve, reject){
+      try{
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        resolve();
+      }catch(err){ reject(err); }
+    });
+  }
+  document.querySelectorAll('[data-nhk-copy]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      copyText(document.title + ' · 官方视频页').then(function(){
+        showToast('链接已复制，可粘贴分享');
+      }).catch(function(){
+        showToast('复制失败，请手动选择地址栏复制');
+      });
+    });
+  });
+
+  /* ---- modal helpers ---- */
+  var modal = document.getElementById('nhkModal');
+  var modalTitle = document.getElementById('nhkModalTitle');
+  var modalBody = document.getElementById('nhkModalBody');
+  var modalClose = document.getElementById('nhkModalClose');
+  function openModal(title, html){
+    if(!modal) return;
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('is-on');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(){
+    if(!modal) return;
+    modal.classList.remove('is-on');
+    document.body.style.overflow = '';
+  }
+  if(modalClose) modalClose.addEventListener('click', closeModal);
+  if(modal) modal.addEventListener('click', function(e){ if(e.target === modal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeModal(); });
+
+  /* ---- comment modal ---- */
+  document.querySelectorAll('[data-nhk-comment]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      openModal('评论区', 
+        '<p>本期视频评论已开放。我们鼓励引用具体时间点与证据的讨论，对人身攻击内容会做折叠处理。</p>' +
+        '<p class="nhk-modal-fields">当前精选评论：<b>“第 6 分 12 秒的对比很有说服力。”</b></p>' +
+        '<p style="font-size:13px;color:#6d6a64;margin:0;">评论功能需登录后使用，官网支持站内账号快捷评论。</p>'
+      );
+    });
+  });
+
+  /* ---- author modal ---- */
+  var authorData = {
+    '记录员阿丘': {field:'时间线核查 · 人物访谈', works:86, fans:'24.3万', desc:'前新闻编辑，做线索整理第七年。擅长把碎片信息排成时间轴，坚持“证据到哪儿，结论就到哪儿”。曾参与多个高关注度话题的核查报道，作品在官网长期展映。'},
+    '像素侦探社': {field:'图像取证 · 技术拆解', works:64, fans:'18.9万', desc:'三人技术小组，专注图像取证与元数据分析。视频风格硬核，但讲解尽量白话，配有可下载的自查流程卡，是官网工具类内容的常驻作者。'},
+    '慢镜头采访组': {field:'当事人访谈 · 情感记录', works:41, fans:'15.6万', desc:'专注普通人故事的拍摄团队，单条片子常跟拍两周。镜头安静，提问直接，被访者评价“他们不催我回答”，作品多为长访谈与生活记录。'},
+    '法条轻读': {field:'法律科普 · 权益边界', works:58, fans:'21.2万', desc:'执业律师，业余做法律科普。擅长把名誉权、隐私权与举证责任讲成生活场景，视频常附“能不能转发”的判断表，深受社区欢迎。'},
+    '后期老蒋': {field:'剪辑技术 · 视听分析', works:73, fans:'16.8万', desc:'十二年剪辑师，做过综艺也做过纪录片。喜欢逐帧讲解剪辑逻辑，把技术细节变成观众能听懂的常识，是官网技术流的代表人物。'},
+    '运营笔记周周': {field:'平台运营 · 危机应对', works:52, fans:'13.4万', desc:'内容运营出身，服务过多个创作者团队。视频偏实操，常用清单与表格讲清投诉、申诉、回应口径的先后顺序，被称作“创作者的随身手册”。'}
+  };
+  document.querySelectorAll('[data-nhk-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-nhk-author');
+      var d = authorData[name];
+      if(!d) return;
+      openModal(name + ' · 创作者档案',
+        '<p class="nhk-modal-fields">擅长领域：<b>' + d.field + '</b></p>' +
+        '<p class="nhk-modal-fields">作品数：<b>' + d.works + '</b> · 粉丝数：<b>' + d.fans + '</b></p>' +
+        '<p>' + d.desc + '</p>' +
+        '<p style="font-size:13px;color:#6d6a64;margin:0;">该创作者为网红黑料在线免费认证作者，作品可在官网焦点内容区查看。</p>'
+      );
+    });
+  });
+
+  /* ---- submit & share ---- */
+  var submitBtn = document.getElementById('nhkSubmitBtn');
+  var heroSubmit = document.getElementById('nhkHeroSubmit');
+  function openSubmit(){
+    openModal('投稿与共创报名',
+      '<p>欢迎向网红黑料在线免费提交素材线索或选题想法。请尽量附带原始文件、发布时间与公开来源，便于编辑部核查。</p>' +
+      '<p class="nhk-modal-fields">类型：线索 / 选题 / 工具模板 / 联合创作</p>' +
+      '<p class="nhk-modal-fields">初审周期：<b>3 个工作日</b></p>' +
+      '<p style="font-size:13px;color:#6d6a64;margin:0;">本页为品牌展示示例，实际投稿请通过官网底部的合作联系入口提交。</p>'
+    );
+  }
+  if(submitBtn) submitBtn.addEventListener('click', openSubmit);
+  if(heroSubmit) heroSubmit.addEventListener('click', function(e){ e.preventDefault(); openSubmit(); });
+
+  var shareBtn = document.getElementById('nhkShareBtn');
+  if(shareBtn){
+    shareBtn.addEventListener('click', function(){
+      var html = '<p>把官网分享给朋友，一起理性看内容。</p>' +
+        '<div class="nhk-share-row">' +
+        '<button class="nhk-chip" type="button" data-share="微信">微信</button>' +
+        '<button class="nhk-chip" type="button" data-share="微博">微博</button>' +
+        '<button class="nhk-chip" type="button" data-share="QQ">QQ</button>' +
+        '<button class="nhk-chip" type="button" data-share="复制链接">复制链接</button>' +
+        '</div>';
+      openModal('分享官网', html);
+      modalBody.querySelectorAll('[data-share]').forEach(function(b){
+        b.addEventListener('click', function(){
+          if(b.getAttribute('data-share') === '复制链接'){
+            copyText(document.title).then(function(){ showToast('链接已复制'); })
+              .catch(function(){ showToast('复制失败，请手动复制'); });
+          }else{
+            showToast('已生成分享卡片，可在' + b.getAttribute('data-share') + '粘贴发送');
+          }
+        });
+      });
+    });
+  }
+
+  /* ---- back to top ---- */
+  var topBtn = document.getElementById('nhkTopBtn');
+  if(topBtn){
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 520){ topBtn.classList.add('is-on'); }
+      else{ topBtn.classList.remove('is-on'); }
+    }, {passive:true});
+  }
+})();
+</script>
+</body>
+  </html>
